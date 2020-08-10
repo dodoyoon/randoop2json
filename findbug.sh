@@ -28,7 +28,7 @@ pwd
 java -classpath .:$JUNITPATH: org.junit.runner.JUnitCore RegressionTest > $(git rev-parse --show-toplevel)/../reg_dif.txt
 
 # clean up the existing test
-cd $(git rev-parse --show-toplevel)
+#cd $(git rev-parse --show-toplevel)
 rm **/ErrorTest* **/RegressionTest*
 cd rdp
 
@@ -39,4 +39,4 @@ javac -classpath .:$JUNITPATH RegressionTest*.java
 java -classpath .:$JUNITPATH: org.junit.runner.JUnitCore RegressionTest > $(git rev-parse --show-toplevel)/../reg2.txt
 
 cd $(git rev-parse --show-toplevel)/../
-./randoop2html result.html
+./randoop2html.sh result.html
