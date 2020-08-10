@@ -1,0 +1,1369 @@
+JUnit version 4.13
+.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E
+Time: 0.22
+There were 325 failures:
+1) test001(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty
+	at com.queues.Queue.dequeue(Queue.java:60)
+	at ErrorTest0.test001(ErrorTest0.java:16)
+2) test002(ErrorTest0)
+java.lang.IllegalArgumentException: No. of vertices is zero or negative.
+	at com.graph.Graph.<init>(Graph.java:60)
+	at ErrorTest0.test002(ErrorTest0.java:24)
+3) test003(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.right(Buffer.java:81)
+	at ErrorTest0.test003(ErrorTest0.java:34)
+4) test004(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test004(ErrorTest0.java:44)
+5) test005(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.dequeue(RandomizedQueue.java:75)
+	at ErrorTest0.test005(ErrorTest0.java:53)
+6) test006(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 52 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test006(ErrorTest0.java:62)
+7) test007(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.right(Buffer.java:81)
+	at ErrorTest0.test007(ErrorTest0.java:71)
+8) test008(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test008(ErrorTest0.java:79)
+9) test009(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test009(ErrorTest0.java:89)
+10) test010(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test010(ErrorTest0.java:98)
+11) test011(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test011(ErrorTest0.java:107)
+12) test012(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.stacks.FixedCapacityStackOfStrings.pop(FixedCapacityStackOfStrings.java:66)
+	at ErrorTest0.test012(ErrorTest0.java:118)
+13) test013(ErrorTest0)
+java.util.NoSuchElementException: No element in queue
+	at com.queues.FixedCapacityQueueOfStrings.dequeue(FixedCapacityQueueOfStrings.java:56)
+	at ErrorTest0.test013(ErrorTest0.java:127)
+14) test014(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test014(ErrorTest0.java:136)
+15) test015(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test015(ErrorTest0.java:146)
+16) test016(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 52
+	at com.unions.UnionFind.union(UnionFind.java:72)
+	at ErrorTest0.test016(ErrorTest0.java:156)
+17) test017(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.stacks.FixedCapacityStackOfStrings.pop(FixedCapacityStackOfStrings.java:66)
+	at ErrorTest0.test017(ErrorTest0.java:167)
+18) test018(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty
+	at com.queues.Queue.dequeue(Queue.java:60)
+	at ErrorTest0.test018(ErrorTest0.java:177)
+19) test019(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeFirst(Deque.java:92)
+	at ErrorTest0.test019(ErrorTest0.java:186)
+20) test020(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 35 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:62)
+	at ErrorTest0.test020(ErrorTest0.java:196)
+21) test021(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty
+	at com.queues.Queue.dequeue(Queue.java:60)
+	at ErrorTest0.test021(ErrorTest0.java:207)
+22) test022(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.dequeue(RandomizedQueue.java:75)
+	at ErrorTest0.test022(ErrorTest0.java:217)
+23) test023(ErrorTest0)
+java.util.NoSuchElementException: Buffer is empty
+	at com.applications.RingBuffer.dequeue(RingBuffer.java:64)
+	at ErrorTest0.test023(ErrorTest0.java:227)
+24) test024(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackOfStrings.pop(StackOfStrings.java:65)
+	at ErrorTest0.test024(ErrorTest0.java:236)
+25) test025(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackOfStrings.pop(StackOfStrings.java:65)
+	at ErrorTest0.test025(ErrorTest0.java:247)
+26) test026(ErrorTest0)
+java.util.NoSuchElementException: Buffer is empty
+	at com.applications.RingBuffer.dequeue(RingBuffer.java:64)
+	at ErrorTest0.test026(ErrorTest0.java:257)
+27) test027(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test027(ErrorTest0.java:269)
+28) test028(ErrorTest0)
+java.lang.NegativeArraySizeException: -1
+	at com.stacks.FixedCapacityStackOfStrings.<init>(FixedCapacityStackOfStrings.java:48)
+	at ErrorTest0.test028(ErrorTest0.java:277)
+29) test029(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.right(Buffer.java:81)
+	at ErrorTest0.test029(ErrorTest0.java:287)
+30) test030(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test030(ErrorTest0.java:296)
+31) test031(ErrorTest0)
+java.util.NoSuchElementException
+	at com.applications.Buffer.delete(Buffer.java:56)
+	at ErrorTest0.test031(ErrorTest0.java:308)
+32) test032(ErrorTest0)
+java.util.NoSuchElementException: No element in queue
+	at com.queues.FixedCapacityQueueOfStrings.dequeue(FixedCapacityQueueOfStrings.java:56)
+	at ErrorTest0.test032(ErrorTest0.java:318)
+33) test033(ErrorTest0)
+java.lang.NullPointerException
+	at com.queues.QueueOfStrings.dequeue(QueueOfStrings.java:62)
+	at ErrorTest0.test033(ErrorTest0.java:327)
+34) test034(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeLast(Deque.java:130)
+	at ErrorTest0.test034(ErrorTest0.java:337)
+35) test035(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test035(ErrorTest0.java:345)
+36) test036(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test036(ErrorTest0.java:358)
+37) test037(ErrorTest0)
+java.util.NoSuchElementException: No item present on stack
+	at com.stacks.Stack.pop(Stack.java:66)
+	at com.applications.Buffer.left(Buffer.java:69)
+	at ErrorTest0.test037(ErrorTest0.java:369)
+38) test038(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test038(ErrorTest0.java:379)
+39) test039(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test039(ErrorTest0.java:388)
+40) test040(ErrorTest0)
+java.lang.IllegalArgumentException: No. of vertices is zero or negative.
+	at com.graph.Graph.<init>(Graph.java:60)
+	at ErrorTest0.test040(ErrorTest0.java:396)
+41) test041(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 35 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test041(ErrorTest0.java:405)
+42) test042(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.dequeue(RandomizedQueue.java:75)
+	at ErrorTest0.test042(ErrorTest0.java:415)
+43) test043(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.sample(RandomizedQueue.java:93)
+	at ErrorTest0.test043(ErrorTest0.java:425)
+44) test044(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test044(ErrorTest0.java:434)
+45) test045(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at com.stacks.ResizingCapacityStackOfStrings.pop(ResizingCapacityStackOfStrings.java:59)
+	at ErrorTest0.test045(ErrorTest0.java:443)
+46) test046(ErrorTest0)
+java.util.NoSuchElementException: No element exists in Steque
+	at com.queues.Steque.pop(Steque.java:85)
+	at ErrorTest0.test046(ErrorTest0.java:455)
+47) test047(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test047(ErrorTest0.java:464)
+48) test048(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 10
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.union(QuickUF.java:48)
+	at ErrorTest0.test048(ErrorTest0.java:473)
+49) test049(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 35
+	at com.unions.UnionFind.union(UnionFind.java:71)
+	at ErrorTest0.test049(ErrorTest0.java:482)
+50) test050(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.addEdge(Graph.java:94)
+	at ErrorTest0.test050(ErrorTest0.java:491)
+51) test051(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test051(ErrorTest0.java:506)
+52) test052(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:62)
+	at ErrorTest0.test052(ErrorTest0.java:515)
+53) test053(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test053(ErrorTest0.java:524)
+54) test054(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty
+	at com.queues.Queue.dequeue(Queue.java:60)
+	at ErrorTest0.test054(ErrorTest0.java:535)
+55) test055(ErrorTest0)
+java.lang.IllegalArgumentException: search key is null
+	at com.tables.UnorderedST.get(UnorderedST.java:97)
+	at com.tables.UnorderedST.contains(UnorderedST.java:115)
+	at ErrorTest0.test055(ErrorTest0.java:546)
+56) test056(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test056(ErrorTest0.java:556)
+57) test057(ErrorTest0)
+java.util.NoSuchElementException: No element in queue
+	at com.queues.FixedCapacityQueueOfStrings.dequeue(FixedCapacityQueueOfStrings.java:56)
+	at ErrorTest0.test057(ErrorTest0.java:565)
+58) test058(ErrorTest0)
+java.lang.RuntimeException: Buffer is full
+	at com.applications.RingBuffer.enqueue(RingBuffer.java:53)
+	at ErrorTest0.test058(ErrorTest0.java:576)
+59) test059(ErrorTest0)
+java.lang.IllegalArgumentException: N has to be a positive integer.
+	at com.applications.RingBuffer.<init>(RingBuffer.java:38)
+	at ErrorTest0.test059(ErrorTest0.java:584)
+60) test060(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test060(ErrorTest0.java:593)
+61) test061(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test061(ErrorTest0.java:602)
+62) test062(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test062(ErrorTest0.java:614)
+63) test063(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test063(ErrorTest0.java:624)
+64) test064(ErrorTest0)
+java.lang.NullPointerException
+	at com.queues.QueueOfStrings.dequeue(QueueOfStrings.java:62)
+	at ErrorTest0.test064(ErrorTest0.java:634)
+65) test065(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 35 out of bounds for length 35
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test065(ErrorTest0.java:643)
+66) test066(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.right(Buffer.java:81)
+	at ErrorTest0.test066(ErrorTest0.java:655)
+67) test067(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeLast(Deque.java:130)
+	at ErrorTest0.test067(ErrorTest0.java:664)
+68) test068(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.sample(RandomizedQueue.java:93)
+	at ErrorTest0.test068(ErrorTest0.java:674)
+69) test069(ErrorTest0)
+java.util.NoSuchElementException
+	at com.applications.Buffer.delete(Buffer.java:56)
+	at ErrorTest0.test069(ErrorTest0.java:685)
+70) test070(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test070(ErrorTest0.java:694)
+71) test071(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 52 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test071(ErrorTest0.java:706)
+72) test072(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test072(ErrorTest0.java:714)
+73) test073(ErrorTest0)
+java.lang.NegativeArraySizeException: -1
+	at com.stacks.FixedCapacityStackOfStrings.<init>(FixedCapacityStackOfStrings.java:48)
+	at ErrorTest0.test073(ErrorTest0.java:722)
+74) test074(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.find(QuickUF.java:60)
+	at ErrorTest0.test074(ErrorTest0.java:731)
+75) test075(ErrorTest0)
+java.util.NoSuchElementException: No element exists in Steque
+	at com.queues.Steque.pop(Steque.java:85)
+	at ErrorTest0.test075(ErrorTest0.java:740)
+76) test076(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test076(ErrorTest0.java:752)
+77) test077(ErrorTest0)
+java.lang.RuntimeException: Buffer is full
+	at com.applications.RingBuffer.enqueue(RingBuffer.java:53)
+	at ErrorTest0.test077(ErrorTest0.java:763)
+78) test078(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackOfStrings.pop(StackOfStrings.java:65)
+	at ErrorTest0.test078(ErrorTest0.java:773)
+79) test079(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeFirst(Deque.java:92)
+	at ErrorTest0.test079(ErrorTest0.java:786)
+80) test080(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.Cycle.dfs(Cycle.java:48)
+	at com.graph.Cycle.<init>(Cycle.java:38)
+	at ErrorTest0.test080(ErrorTest0.java:797)
+81) test081(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test081(ErrorTest0.java:806)
+82) test082(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 35 out of bounds for length 10
+	at com.graph.Graph.adj(Graph.java:122)
+	at ErrorTest0.test082(ErrorTest0.java:815)
+83) test083(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test083(ErrorTest0.java:825)
+84) test084(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 52
+	at com.unions.UnionFind.union(UnionFind.java:71)
+	at ErrorTest0.test084(ErrorTest0.java:835)
+85) test085(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.dequeue(RandomizedQueue.java:75)
+	at ErrorTest0.test085(ErrorTest0.java:845)
+86) test086(ErrorTest0)
+java.util.NoSuchElementException: No element exists in Steque
+	at com.queues.Steque.pop(Steque.java:85)
+	at ErrorTest0.test086(ErrorTest0.java:855)
+87) test087(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test087(ErrorTest0.java:864)
+88) test088(ErrorTest0)
+java.lang.IllegalArgumentException: search key is null
+	at com.tables.UnorderedST.get(UnorderedST.java:97)
+	at ErrorTest0.test088(ErrorTest0.java:881)
+89) test089(ErrorTest0)
+java.lang.NullPointerException
+	at com.queues.QueueOfStrings.dequeue(QueueOfStrings.java:62)
+	at ErrorTest0.test089(ErrorTest0.java:892)
+90) test090(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at com.stacks.ResizingCapacityStackOfStrings.pop(ResizingCapacityStackOfStrings.java:59)
+	at ErrorTest0.test090(ErrorTest0.java:903)
+91) test091(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 52 out of bounds for length 10
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.find(QuickUF.java:60)
+	at ErrorTest0.test091(ErrorTest0.java:914)
+92) test092(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test092(ErrorTest0.java:923)
+93) test093(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.find(QuickUF.java:60)
+	at ErrorTest0.test093(ErrorTest0.java:934)
+94) test094(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test094(ErrorTest0.java:945)
+95) test095(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty
+	at com.queues.Queue.dequeue(Queue.java:60)
+	at ErrorTest0.test095(ErrorTest0.java:957)
+96) test096(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.find(QuickUF.java:60)
+	at ErrorTest0.test096(ErrorTest0.java:966)
+97) test097(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:61)
+	at ErrorTest0.test097(ErrorTest0.java:977)
+98) test098(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test098(ErrorTest0.java:991)
+99) test099(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.sample(RandomizedQueue.java:93)
+	at ErrorTest0.test099(ErrorTest0.java:1000)
+100) test100(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test100(ErrorTest0.java:1009)
+101) test101(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 1
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test101(ErrorTest0.java:1018)
+102) test102(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 1
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test102(ErrorTest0.java:1027)
+103) test103(ErrorTest0)
+java.lang.IllegalArgumentException: N has to be a positive integer.
+	at com.applications.RingBuffer.<init>(RingBuffer.java:38)
+	at ErrorTest0.test103(ErrorTest0.java:1035)
+104) test104(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test104(ErrorTest0.java:1043)
+105) test105(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.CC.id(CC.java:59)
+	at ErrorTest0.test105(ErrorTest0.java:1054)
+106) test106(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty
+	at com.queues.Queue.dequeue(Queue.java:60)
+	at ErrorTest0.test106(ErrorTest0.java:1067)
+107) test107(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at ErrorTest0.test107(ErrorTest0.java:1080)
+108) test108(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.right(Buffer.java:81)
+	at ErrorTest0.test108(ErrorTest0.java:1091)
+109) test109(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test109(ErrorTest0.java:1100)
+110) test110(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test110(ErrorTest0.java:1115)
+111) test111(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.DepthFirstSearch.<init>(DepthFirstSearch.java:48)
+	at ErrorTest0.test111(ErrorTest0.java:1130)
+112) test112(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test112(ErrorTest0.java:1141)
+113) test113(ErrorTest0)
+java.lang.IllegalArgumentException: vertex not found in Graph
+	at com.graph.BasicOperations.degree(BasicOperations.java:30)
+	at ErrorTest0.test113(ErrorTest0.java:1152)
+114) test114(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test114(ErrorTest0.java:1163)
+115) test115(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test115(ErrorTest0.java:1174)
+116) test116(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test116(ErrorTest0.java:1182)
+117) test117(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 10
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.union(QuickUF.java:48)
+	at ErrorTest0.test117(ErrorTest0.java:1192)
+118) test118(ErrorTest0)
+java.lang.IllegalArgumentException: You have entered a bad N :(
+	at com.applications.Josephus.<init>(Josephus.java:37)
+	at ErrorTest0.test118(ErrorTest0.java:1200)
+119) test119(ErrorTest0)
+java.lang.NullPointerException
+	at com.queues.QueueOfStrings.dequeue(QueueOfStrings.java:62)
+	at ErrorTest0.test119(ErrorTest0.java:1212)
+120) test120(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test120(ErrorTest0.java:1221)
+121) test121(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 52
+	at com.unions.UnionFind.union(UnionFind.java:71)
+	at ErrorTest0.test121(ErrorTest0.java:1234)
+122) test122(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test122(ErrorTest0.java:1243)
+123) test123(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.Cycle.dfs(Cycle.java:48)
+	at com.graph.Cycle.<init>(Cycle.java:38)
+	at ErrorTest0.test123(ErrorTest0.java:1255)
+124) test124(ErrorTest0)
+java.util.NoSuchElementException: No item present on stack
+	at com.stacks.Stack.peek(Stack.java:78)
+	at ErrorTest0.test124(ErrorTest0.java:1266)
+125) test125(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test125(ErrorTest0.java:1277)
+126) test126(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test126(ErrorTest0.java:1287)
+127) test127(ErrorTest0)
+java.util.NoSuchElementException
+	at com.applications.Buffer.delete(Buffer.java:56)
+	at ErrorTest0.test127(ErrorTest0.java:1300)
+128) test128(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test128(ErrorTest0.java:1309)
+129) test129(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.DepthFirstSearch.marked(DepthFirstSearch.java:61)
+	at ErrorTest0.test129(ErrorTest0.java:1321)
+130) test130(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at com.stacks.ResizingCapacityStackOfStrings.pop(ResizingCapacityStackOfStrings.java:59)
+	at ErrorTest0.test130(ErrorTest0.java:1332)
+131) test131(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at com.graph.Graph.hasEdge(Graph.java:132)
+	at ErrorTest0.test131(ErrorTest0.java:1345)
+132) test132(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:61)
+	at ErrorTest0.test132(ErrorTest0.java:1354)
+133) test133(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeFirst(Deque.java:92)
+	at ErrorTest0.test133(ErrorTest0.java:1370)
+134) test134(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test134(ErrorTest0.java:1380)
+135) test135(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.right(Buffer.java:81)
+	at ErrorTest0.test135(ErrorTest0.java:1395)
+136) test136(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 35
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.union(QuickUF.java:48)
+	at ErrorTest0.test136(ErrorTest0.java:1406)
+137) test137(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Cycle.dfs(Cycle.java:48)
+	at com.graph.Cycle.<init>(Cycle.java:38)
+	at ErrorTest0.test137(ErrorTest0.java:1416)
+138) test138(ErrorTest0)
+java.lang.IllegalArgumentException: N has to be a positive integer.
+	at com.applications.RingBuffer.<init>(RingBuffer.java:38)
+	at ErrorTest0.test138(ErrorTest0.java:1424)
+139) test139(ErrorTest0)
+java.util.NoSuchElementException: No element in queue
+	at com.queues.FixedCapacityQueueOfStrings.dequeue(FixedCapacityQueueOfStrings.java:56)
+	at ErrorTest0.test139(ErrorTest0.java:1433)
+140) test140(ErrorTest0)
+java.lang.RuntimeException: Buffer is full
+	at com.applications.RingBuffer.enqueue(RingBuffer.java:53)
+	at ErrorTest0.test140(ErrorTest0.java:1445)
+141) test141(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test141(ErrorTest0.java:1459)
+142) test142(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test142(ErrorTest0.java:1468)
+143) test143(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.hasPathTo(BreadthFirstSearch.java:77)
+	at ErrorTest0.test143(ErrorTest0.java:1482)
+144) test144(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test144(ErrorTest0.java:1496)
+145) test145(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test145(ErrorTest0.java:1507)
+146) test146(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test146(ErrorTest0.java:1515)
+147) test147(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at ErrorTest0.test147(ErrorTest0.java:1527)
+148) test148(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test148(ErrorTest0.java:1536)
+149) test149(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 1
+	at com.graph.Cycle.dfs(Cycle.java:48)
+	at com.graph.Cycle.<init>(Cycle.java:38)
+	at ErrorTest0.test149(ErrorTest0.java:1545)
+150) test150(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeLast(Deque.java:130)
+	at ErrorTest0.test150(ErrorTest0.java:1557)
+151) test151(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.hasPathTo(BreadthFirstSearch.java:77)
+	at ErrorTest0.test151(ErrorTest0.java:1569)
+152) test152(ErrorTest0)
+java.lang.IllegalArgumentException: You have entered a bad N :(
+	at com.applications.Josephus.<init>(Josephus.java:37)
+	at ErrorTest0.test152(ErrorTest0.java:1577)
+153) test153(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at com.graph.Graph.hasEdge(Graph.java:132)
+	at ErrorTest0.test153(ErrorTest0.java:1591)
+154) test154(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.hasPathTo(BreadthFirstSearch.java:77)
+	at ErrorTest0.test154(ErrorTest0.java:1605)
+155) test155(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at com.graph.Graph.hasEdge(Graph.java:132)
+	at ErrorTest0.test155(ErrorTest0.java:1614)
+156) test156(ErrorTest0)
+java.util.NoSuchElementException: No item present on stack
+	at com.stacks.Stack.pop(Stack.java:66)
+	at com.applications.Buffer.left(Buffer.java:69)
+	at ErrorTest0.test156(ErrorTest0.java:1628)
+157) test157(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at com.stacks.ResizingCapacityStackOfStrings.pop(ResizingCapacityStackOfStrings.java:59)
+	at ErrorTest0.test157(ErrorTest0.java:1641)
+158) test158(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test158(ErrorTest0.java:1650)
+159) test159(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test159(ErrorTest0.java:1658)
+160) test160(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:62)
+	at ErrorTest0.test160(ErrorTest0.java:1667)
+161) test161(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test161(ErrorTest0.java:1678)
+162) test162(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.bfs(BreadthFirstSearch.java:38)
+	at com.graph.BreadthFirstSearch.<init>(BreadthFirstSearch.java:34)
+	at ErrorTest0.test162(ErrorTest0.java:1691)
+163) test163(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.sample(RandomizedQueue.java:93)
+	at ErrorTest0.test163(ErrorTest0.java:1703)
+164) test164(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeLast(Deque.java:130)
+	at ErrorTest0.test164(ErrorTest0.java:1716)
+165) test165(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test165(ErrorTest0.java:1725)
+166) test166(ErrorTest0)
+java.util.NoSuchElementException
+	at com.applications.Buffer.delete(Buffer.java:56)
+	at ErrorTest0.test166(ErrorTest0.java:1739)
+167) test167(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.stacks.FixedCapacityStackOfStrings.pop(FixedCapacityStackOfStrings.java:66)
+	at ErrorTest0.test167(ErrorTest0.java:1751)
+168) test168(ErrorTest0)
+java.util.NoSuchElementException: No element is present in queue
+	at com.queues.ResizingQueueOfStrings.dequeue(ResizingQueueOfStrings.java:57)
+	at ErrorTest0.test168(ErrorTest0.java:1763)
+169) test169(ErrorTest0)
+java.lang.NegativeArraySizeException: -1
+	at com.unions.WeightedQuickUF.<init>(WeightedQuickUF.java:34)
+	at ErrorTest0.test169(ErrorTest0.java:1771)
+170) test170(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.DepthFirstSearch.marked(DepthFirstSearch.java:61)
+	at ErrorTest0.test170(ErrorTest0.java:1784)
+171) test171(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test171(ErrorTest0.java:1807)
+172) test172(ErrorTest0)
+java.util.NoSuchElementException: No element is present in queue
+	at com.queues.ResizingQueueOfStrings.dequeue(ResizingQueueOfStrings.java:57)
+	at ErrorTest0.test172(ErrorTest0.java:1820)
+173) test173(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.addEdge(Graph.java:94)
+	at ErrorTest0.test173(ErrorTest0.java:1833)
+174) test174(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test174(ErrorTest0.java:1843)
+175) test175(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:61)
+	at ErrorTest0.test175(ErrorTest0.java:1852)
+176) test176(ErrorTest0)
+java.util.NoSuchElementException
+	at com.applications.Buffer.delete(Buffer.java:56)
+	at ErrorTest0.test176(ErrorTest0.java:1868)
+177) test177(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 1
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.union(QuickUF.java:48)
+	at ErrorTest0.test177(ErrorTest0.java:1877)
+178) test178(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test178(ErrorTest0.java:1892)
+179) test179(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.sample(RandomizedQueue.java:93)
+	at ErrorTest0.test179(ErrorTest0.java:1903)
+180) test180(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test180(ErrorTest0.java:1916)
+181) test181(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test181(ErrorTest0.java:1925)
+182) test182(ErrorTest0)
+java.util.NoSuchElementException
+	at com.applications.Buffer.delete(Buffer.java:56)
+	at ErrorTest0.test182(ErrorTest0.java:1935)
+183) test183(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 35
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.union(QuickUF.java:48)
+	at ErrorTest0.test183(ErrorTest0.java:1944)
+184) test184(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at ErrorTest0.test184(ErrorTest0.java:1956)
+185) test185(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 35 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:62)
+	at ErrorTest0.test185(ErrorTest0.java:1966)
+186) test186(ErrorTest0)
+java.util.NoSuchElementException: No element is present in queue
+	at com.queues.ResizingQueueOfStrings.dequeue(ResizingQueueOfStrings.java:57)
+	at ErrorTest0.test186(ErrorTest0.java:1975)
+187) test187(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 35
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.find(QuickUF.java:60)
+	at ErrorTest0.test187(ErrorTest0.java:1986)
+188) test188(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 35
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.find(QuickUF.java:60)
+	at ErrorTest0.test188(ErrorTest0.java:1997)
+189) test189(ErrorTest0)
+java.util.NoSuchElementException: Buffer is empty
+	at com.applications.RingBuffer.dequeue(RingBuffer.java:64)
+	at ErrorTest0.test189(ErrorTest0.java:2008)
+190) test190(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test190(ErrorTest0.java:2021)
+191) test191(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test191(ErrorTest0.java:2030)
+192) test192(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at com.graph.Graph.hasEdge(Graph.java:132)
+	at ErrorTest0.test192(ErrorTest0.java:2045)
+193) test193(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test193(ErrorTest0.java:2057)
+194) test194(ErrorTest0)
+java.util.NoSuchElementException: Buffer is empty
+	at com.applications.RingBuffer.dequeue(RingBuffer.java:64)
+	at ErrorTest0.test194(ErrorTest0.java:2066)
+195) test195(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test195(ErrorTest0.java:2078)
+196) test196(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.bfs(BreadthFirstSearch.java:38)
+	at com.graph.BreadthFirstSearch.<init>(BreadthFirstSearch.java:34)
+	at ErrorTest0.test196(ErrorTest0.java:2091)
+197) test197(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.CC.id(CC.java:59)
+	at ErrorTest0.test197(ErrorTest0.java:2104)
+198) test198(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.hasPathTo(BreadthFirstSearch.java:77)
+	at ErrorTest0.test198(ErrorTest0.java:2119)
+199) test199(ErrorTest0)
+java.lang.IllegalArgumentException: vertex not found in Graph
+	at com.graph.BasicOperations.degree(BasicOperations.java:30)
+	at ErrorTest0.test199(ErrorTest0.java:2137)
+200) test200(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test200(ErrorTest0.java:2169)
+201) test201(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test201(ErrorTest0.java:2179)
+202) test202(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test202(ErrorTest0.java:2189)
+203) test203(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty
+	at com.queues.Queue.dequeue(Queue.java:60)
+	at ErrorTest0.test203(ErrorTest0.java:2202)
+204) test204(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test204(ErrorTest0.java:2215)
+205) test205(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.union(QuickUF.java:48)
+	at ErrorTest0.test205(ErrorTest0.java:2225)
+206) test206(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test206(ErrorTest0.java:2235)
+207) test207(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test207(ErrorTest0.java:2244)
+208) test208(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test208(ErrorTest0.java:2253)
+209) test209(ErrorTest0)
+java.util.NoSuchElementException: No element is present in queue
+	at com.queues.ResizingQueueOfStrings.dequeue(ResizingQueueOfStrings.java:57)
+	at ErrorTest0.test209(ErrorTest0.java:2263)
+210) test210(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test210(ErrorTest0.java:2277)
+211) test211(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 52 out of bounds for length 10
+	at com.graph.DepthFirstSearch.<init>(DepthFirstSearch.java:48)
+	at ErrorTest0.test211(ErrorTest0.java:2286)
+212) test212(ErrorTest0)
+java.util.NoSuchElementException: No element in queue
+	at com.queues.FixedCapacityQueueOfStrings.dequeue(FixedCapacityQueueOfStrings.java:56)
+	at ErrorTest0.test212(ErrorTest0.java:2295)
+213) test213(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test213(ErrorTest0.java:2317)
+214) test214(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test214(ErrorTest0.java:2330)
+215) test215(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.dequeue(RandomizedQueue.java:75)
+	at ErrorTest0.test215(ErrorTest0.java:2342)
+216) test216(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 35 out of bounds for length 10
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.union(QuickUF.java:48)
+	at ErrorTest0.test216(ErrorTest0.java:2352)
+217) test217(ErrorTest0)
+java.util.NoSuchElementException: No element exists in Steque
+	at com.queues.Steque.pop(Steque.java:85)
+	at ErrorTest0.test217(ErrorTest0.java:2363)
+218) test218(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:61)
+	at ErrorTest0.test218(ErrorTest0.java:2374)
+219) test219(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 97
+	at com.graph.CC.id(CC.java:59)
+	at ErrorTest0.test219(ErrorTest0.java:2388)
+220) test220(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.sample(RandomizedQueue.java:93)
+	at ErrorTest0.test220(ErrorTest0.java:2402)
+221) test221(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test221(ErrorTest0.java:2410)
+222) test222(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test222(ErrorTest0.java:2430)
+223) test223(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test223(ErrorTest0.java:2438)
+224) test224(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.hasPathTo(BreadthFirstSearch.java:77)
+	at ErrorTest0.test224(ErrorTest0.java:2451)
+225) test225(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test225(ErrorTest0.java:2463)
+226) test226(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test226(ErrorTest0.java:2472)
+227) test227(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test227(ErrorTest0.java:2514)
+228) test228(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test228(ErrorTest0.java:2524)
+229) test229(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test229(ErrorTest0.java:2533)
+230) test230(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 1
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test230(ErrorTest0.java:2543)
+231) test231(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:61)
+	at ErrorTest0.test231(ErrorTest0.java:2552)
+232) test232(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.sample(RandomizedQueue.java:93)
+	at ErrorTest0.test232(ErrorTest0.java:2564)
+233) test233(ErrorTest0)
+java.lang.NegativeArraySizeException: -1
+	at com.queues.FixedCapacityQueueOfStrings.<init>(FixedCapacityQueueOfStrings.java:38)
+	at ErrorTest0.test233(ErrorTest0.java:2572)
+234) test234(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 52 out of bounds for length 35
+	at com.unions.UnionFind.union(UnionFind.java:71)
+	at ErrorTest0.test234(ErrorTest0.java:2581)
+235) test235(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test235(ErrorTest0.java:2590)
+236) test236(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.addEdge(Graph.java:95)
+	at ErrorTest0.test236(ErrorTest0.java:2606)
+237) test237(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test237(ErrorTest0.java:2614)
+238) test238(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test238(ErrorTest0.java:2623)
+239) test239(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackOfStrings.pop(StackOfStrings.java:65)
+	at ErrorTest0.test239(ErrorTest0.java:2636)
+240) test240(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test240(ErrorTest0.java:2649)
+241) test241(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.hasPathTo(BreadthFirstSearch.java:77)
+	at ErrorTest0.test241(ErrorTest0.java:2660)
+242) test242(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at ErrorTest0.test242(ErrorTest0.java:2676)
+243) test243(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test243(ErrorTest0.java:2685)
+244) test244(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test244(ErrorTest0.java:2698)
+245) test245(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test245(ErrorTest0.java:2707)
+246) test246(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.Graph.addEdge(Graph.java:94)
+	at ErrorTest0.test246(ErrorTest0.java:2720)
+247) test247(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.stacks.FixedCapacityStackOfStrings.pop(FixedCapacityStackOfStrings.java:66)
+	at ErrorTest0.test247(ErrorTest0.java:2729)
+248) test248(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test248(ErrorTest0.java:2738)
+249) test249(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty
+	at com.queues.Queue.dequeue(Queue.java:60)
+	at ErrorTest0.test249(ErrorTest0.java:2752)
+250) test250(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.Graph.addEdge(Graph.java:95)
+	at ErrorTest0.test250(ErrorTest0.java:2766)
+251) test251(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test251(ErrorTest0.java:2775)
+252) test252(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test252(ErrorTest0.java:2784)
+253) test253(ErrorTest0)
+java.util.NoSuchElementException: No item present on stack
+	at com.stacks.Stack.peek(Stack.java:78)
+	at ErrorTest0.test253(ErrorTest0.java:2794)
+254) test254(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:61)
+	at ErrorTest0.test254(ErrorTest0.java:2804)
+255) test255(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.hasPathTo(BreadthFirstSearch.java:77)
+	at ErrorTest0.test255(ErrorTest0.java:2818)
+256) test256(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.find(QuickUF.java:60)
+	at ErrorTest0.test256(ErrorTest0.java:2828)
+257) test257(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test257(ErrorTest0.java:2840)
+258) test258(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.hasPathTo(BreadthFirstSearch.java:77)
+	at ErrorTest0.test258(ErrorTest0.java:2856)
+259) test259(ErrorTest0)
+java.lang.IllegalArgumentException: vertex not found in Graph
+	at com.graph.BasicOperations.degree(BasicOperations.java:30)
+	at ErrorTest0.test259(ErrorTest0.java:2897)
+260) test260(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 35 out of bounds for length 35
+	at com.unions.UnionFind.union(UnionFind.java:72)
+	at ErrorTest0.test260(ErrorTest0.java:2906)
+261) test261(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.bfs(BreadthFirstSearch.java:38)
+	at com.graph.BreadthFirstSearch.<init>(BreadthFirstSearch.java:34)
+	at ErrorTest0.test261(ErrorTest0.java:2916)
+262) test262(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at ErrorTest0.test262(ErrorTest0.java:2928)
+263) test263(ErrorTest0)
+java.lang.RuntimeException: Buffer is full
+	at com.applications.RingBuffer.enqueue(RingBuffer.java:53)
+	at ErrorTest0.test263(ErrorTest0.java:2941)
+264) test264(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeLast(Deque.java:130)
+	at ErrorTest0.test264(ErrorTest0.java:2970)
+265) test265(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test265(ErrorTest0.java:2979)
+266) test266(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 52 out of bounds for length 35
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.find(QuickUF.java:60)
+	at ErrorTest0.test266(ErrorTest0.java:2991)
+267) test267(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test267(ErrorTest0.java:3000)
+268) test268(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at com.stacks.ResizingCapacityStackOfStrings.pop(ResizingCapacityStackOfStrings.java:59)
+	at ErrorTest0.test268(ErrorTest0.java:3010)
+269) test269(ErrorTest0)
+java.util.NoSuchElementException: Buffer is empty
+	at com.applications.RingBuffer.dequeue(RingBuffer.java:64)
+	at ErrorTest0.test269(ErrorTest0.java:3021)
+270) test270(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test270(ErrorTest0.java:3035)
+271) test271(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.CC.id(CC.java:59)
+	at ErrorTest0.test271(ErrorTest0.java:3049)
+272) test272(ErrorTest0)
+java.lang.IllegalArgumentException: search key is null
+	at com.tables.UnorderedST.put(UnorderedST.java:64)
+	at ErrorTest0.test272(ErrorTest0.java:3085)
+273) test273(ErrorTest0)
+java.util.NoSuchElementException: Buffer is empty
+	at com.applications.RingBuffer.dequeue(RingBuffer.java:64)
+	at ErrorTest0.test273(ErrorTest0.java:3096)
+274) test274(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.DepthFirstSearch.marked(DepthFirstSearch.java:61)
+	at ErrorTest0.test274(ErrorTest0.java:3109)
+275) test275(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test275(ErrorTest0.java:3117)
+276) test276(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test276(ErrorTest0.java:3126)
+277) test277(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.find(QuickUF.java:60)
+	at ErrorTest0.test277(ErrorTest0.java:3135)
+278) test278(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at com.graph.Graph.hasEdge(Graph.java:132)
+	at ErrorTest0.test278(ErrorTest0.java:3148)
+279) test279(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 1
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.union(QuickUF.java:48)
+	at ErrorTest0.test279(ErrorTest0.java:3157)
+280) test280(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.right(Buffer.java:81)
+	at ErrorTest0.test280(ErrorTest0.java:3171)
+281) test281(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.bfs(BreadthFirstSearch.java:38)
+	at com.graph.BreadthFirstSearch.<init>(BreadthFirstSearch.java:34)
+	at ErrorTest0.test281(ErrorTest0.java:3184)
+282) test282(ErrorTest0)
+java.util.NoSuchElementException: No element is present in queue
+	at com.queues.ResizingQueueOfStrings.dequeue(ResizingQueueOfStrings.java:57)
+	at ErrorTest0.test282(ErrorTest0.java:3198)
+283) test283(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 35
+	at com.stacks.FixedCapacityStackOfStrings.pop(FixedCapacityStackOfStrings.java:66)
+	at ErrorTest0.test283(ErrorTest0.java:3207)
+284) test284(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.CC.id(CC.java:59)
+	at ErrorTest0.test284(ErrorTest0.java:3218)
+285) test285(ErrorTest0)
+java.lang.NegativeArraySizeException: -1
+	at com.unions.UnionFind.<init>(UnionFind.java:57)
+	at ErrorTest0.test285(ErrorTest0.java:3226)
+286) test286(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at com.stacks.ResizingCapacityStackOfStrings.pop(ResizingCapacityStackOfStrings.java:59)
+	at ErrorTest0.test286(ErrorTest0.java:3238)
+287) test287(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeFirst(Deque.java:92)
+	at ErrorTest0.test287(ErrorTest0.java:3251)
+288) test288(ErrorTest0)
+java.util.NoSuchElementException: Queue is empty, by the way!!
+	at com.queues.RandomizedQueue.dequeue(RandomizedQueue.java:75)
+	at ErrorTest0.test288(ErrorTest0.java:3264)
+289) test289(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test289(ErrorTest0.java:3274)
+290) test290(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 52
+	at com.unions.UnionFind.union(UnionFind.java:72)
+	at ErrorTest0.test290(ErrorTest0.java:3286)
+291) test291(ErrorTest0)
+java.util.NoSuchElementException: No item present on stack
+	at com.stacks.Stack.pop(Stack.java:66)
+	at com.applications.Buffer.right(Buffer.java:83)
+	at ErrorTest0.test291(ErrorTest0.java:3299)
+292) test292(ErrorTest0)
+java.util.NoSuchElementException: No element exists in Steque
+	at com.queues.Steque.pop(Steque.java:85)
+	at ErrorTest0.test292(ErrorTest0.java:3311)
+293) test293(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test293(ErrorTest0.java:3319)
+294) test294(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 97
+	at com.unions.UnionFind.union(UnionFind.java:72)
+	at ErrorTest0.test294(ErrorTest0.java:3328)
+295) test295(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.index(SymbolGraph.java:34)
+	at ErrorTest0.test295(ErrorTest0.java:3337)
+296) test296(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.Graph.adj(Graph.java:122)
+	at ErrorTest0.test296(ErrorTest0.java:3346)
+297) test297(ErrorTest0)
+java.lang.NegativeArraySizeException: -1
+	at com.queues.FixedCapacityQueueOfStrings.<init>(FixedCapacityQueueOfStrings.java:38)
+	at ErrorTest0.test297(ErrorTest0.java:3354)
+298) test298(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test298(ErrorTest0.java:3363)
+299) test299(ErrorTest0)
+java.lang.IllegalArgumentException: search key is null
+	at com.tables.UnorderedST.get(UnorderedST.java:97)
+	at com.tables.UnorderedST.contains(UnorderedST.java:115)
+	at ErrorTest0.test299(ErrorTest0.java:3392)
+300) test300(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.name(SymbolGraph.java:38)
+	at ErrorTest0.test300(ErrorTest0.java:3401)
+301) test301(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.stacks.FixedCapacityStackOfStrings.pop(FixedCapacityStackOfStrings.java:66)
+	at ErrorTest0.test301(ErrorTest0.java:3434)
+302) test302(ErrorTest0)
+java.util.NoSuchElementException
+	at com.applications.Buffer.delete(Buffer.java:56)
+	at ErrorTest0.test302(ErrorTest0.java:3448)
+303) test303(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 52
+	at com.unions.UnionFind.find(UnionFind.java:86)
+	at ErrorTest0.test303(ErrorTest0.java:3459)
+304) test304(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test304(ErrorTest0.java:3488)
+305) test305(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 100
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.union(WeightedQuickUF.java:61)
+	at ErrorTest0.test305(ErrorTest0.java:3499)
+306) test306(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 97
+	at com.graph.Graph.addEdge(Graph.java:95)
+	at ErrorTest0.test306(ErrorTest0.java:3514)
+307) test307(ErrorTest0)
+java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Comparable; ([Ljava.lang.Object; and [Ljava.lang.Comparable; are in module java.base of loader 'bootstrap')
+	at com.tables.ST.<init>(ST.java:32)
+	at ErrorTest0.test307(ErrorTest0.java:3522)
+308) test308(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at com.stacks.ResizingCapacityStackOfStrings.pop(ResizingCapacityStackOfStrings.java:59)
+	at ErrorTest0.test308(ErrorTest0.java:3534)
+309) test309(ErrorTest0)
+java.util.NoSuchElementException: No item present on stack
+	at com.stacks.Stack.peek(Stack.java:78)
+	at ErrorTest0.test309(ErrorTest0.java:3545)
+310) test310(ErrorTest0)
+java.lang.IllegalArgumentException: M is out of range!
+	at com.applications.Josephus.execute(Josephus.java:53)
+	at ErrorTest0.test310(ErrorTest0.java:3554)
+311) test311(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 97
+	at com.graph.DepthFirstSearch.<init>(DepthFirstSearch.java:48)
+	at ErrorTest0.test311(ErrorTest0.java:3567)
+312) test312(ErrorTest0)
+java.lang.NullPointerException
+	at com.graph.SymbolGraph.contains(SymbolGraph.java:30)
+	at ErrorTest0.test312(ErrorTest0.java:3576)
+313) test313(ErrorTest0)
+java.lang.NullPointerException
+	at com.stacks.StackWithMiddle.push(StackWithMiddle.java:60)
+	at ErrorTest0.test313(ErrorTest0.java:3600)
+314) test314(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at com.stacks.FixedCapacityStackOfStrings.pop(FixedCapacityStackOfStrings.java:66)
+	at ErrorTest0.test314(ErrorTest0.java:3610)
+315) test315(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
+	at com.unions.WeightedQuickUF.root(WeightedQuickUF.java:87)
+	at com.unions.WeightedQuickUF.find(WeightedQuickUF.java:51)
+	at ErrorTest0.test315(ErrorTest0.java:3620)
+316) test316(ErrorTest0)
+java.lang.IllegalArgumentException: vertex not found in Graph
+	at com.graph.BasicOperations.degree(BasicOperations.java:30)
+	at ErrorTest0.test316(ErrorTest0.java:3636)
+317) test317(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.right(Buffer.java:81)
+	at ErrorTest0.test317(ErrorTest0.java:3647)
+318) test318(ErrorTest0)
+java.util.NoSuchElementException: no element exists on deque.
+	at com.queues.Deque.removeFirst(Deque.java:92)
+	at ErrorTest0.test318(ErrorTest0.java:3675)
+319) test319(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 100
+	at com.unions.QuickUF.root(QuickUF.java:78)
+	at com.unions.QuickUF.union(QuickUF.java:49)
+	at ErrorTest0.test319(ErrorTest0.java:3684)
+320) test320(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 97
+	at com.graph.Graph.addEdge(Graph.java:94)
+	at ErrorTest0.test320(ErrorTest0.java:3698)
+321) test321(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.BreadthFirstSearch.hasPathTo(BreadthFirstSearch.java:77)
+	at ErrorTest0.test321(ErrorTest0.java:3710)
+322) test322(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.left(Buffer.java:67)
+	at ErrorTest0.test322(ErrorTest0.java:3726)
+323) test323(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 97 out of bounds for length 97
+	at com.graph.Graph.addEdge(Graph.java:94)
+	at ErrorTest0.test323(ErrorTest0.java:3740)
+324) test324(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 97
+	at com.graph.Graph.addEdge(Graph.java:94)
+	at ErrorTest0.test324(ErrorTest0.java:3750)
+325) test325(ErrorTest0)
+java.lang.IllegalArgumentException: k is outside buffer size
+	at com.applications.Buffer.right(Buffer.java:81)
+	at ErrorTest0.test325(ErrorTest0.java:3760)
+
+FAILURES!!!
+Tests run: 325,  Failures: 325
+

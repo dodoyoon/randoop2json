@@ -1,71 +1,61 @@
-import json
-import sys
-import re
+import json, copy, sys
 
-inf = open(sys.argv[1], 'r')
-content = inf.readlines()
-inf.close()
+filename = sys.argv[1]
 
-testsyntax = re.compile('\d*\) test\d*\(ErrorTest\d*\)')
+final_dict = {}
 
-#print(content)
+with open(filename) as fh:
+    l_cnt = 0
+    last_elem_cnt = 0
+    descriptions=[]
+    one_description={}
+    result_dict={}
+    loc_list=[]
+    for line in fh:
+        if line == '\n' :
+            continue
 
-versionline = 0
-relevent = False
-exception = False
-firsttest = True
+        line = line.strip()
 
-testfinal = json.loads('{}')
-testlist = []
-tests = []
-onetest = json.loads('{}')
-loc = []
-
-for i in range(len(content)):
-    if i==versionline and content[i].startswith("JUnit version "):
-        print(content[i])
-        jver = content[i]
-
-    if content[i].startswith("Time: "):
-        time = content[i]
-        relevent = True
-
-    '''
-    if relevent:
-        print(i, content[i])
-    '''
-
-    if relevent:
-        if testsyntax.match(content[i]):
-            onetest = json.loads('{}')
-            loc = []
-            if not firsttest:
-                print("==============")
-                print(onetest)
-                onetest.update({"from": loc})
-                tests.append(onetest)
-                #testfinal.update(testlist)
+        if line[0].isdigit():
+            if loc_list:
+                one_description['location'] = loc_list
+                descriptions.append(copy.deepcopy(one_description))
+                loc_list.clear()
+                one_description.clear()
+                one_description['id'] = line
             else:
-                firsttest = False
-            #if not first close
-            onetest.update({"id": content[i]})
-            exception = True
-            #testid = {"id": content[i]}
-            #testresult.update(testid)
-            print(i, content[i])
-        elif exception:
-            onetest.update({"exception": content[i]})
-            print(content[i])
-            exception = False
+                one_description['id'] = line
+
+        # exception
+        elif line.split('.', 1)[0] == 'java':
+            one_description['exception'] = line
+
+        # location
+        elif line.split(' ', 1)[0] == 'at':
+            loc_list.append(copy.deepcopy(line))
+
+        # results
+        elif line[0] == 'F':
+            result_dict['word'] = line
+            if last_elem_cnt == 0:
+                one_description['location'] = loc_list
+
+                descriptions.append(copy.deepcopy(one_description))
+                last_elem_cnt = last_elem_cnt + 1
+
+        elif line.split(' ', 1)[0] == 'Tests':
+             result_dict['result'] = line
+
         else:
-            loc.append(content[i])
+            continue
 
-result = {"jver": jver, "time": time, "tests": tests}
+    final_dict['descriptions'] = descriptions
+    final_dict['summary'] = result_dict
 
 
+out_file_name = filename + '.json'
+out_file = open(out_file_name, "w")
+json.dump(final_dict, out_file, indent=4)
+out_file.close()
 
-print(json.dumps(result))
-
-with open('data.json', 'w') as f:
-    json.dump(result, f)
-    
