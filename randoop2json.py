@@ -1,4 +1,5 @@
 import json, copy, sys
+from json2html import *
 
 filename = sys.argv[1]
 
@@ -53,9 +54,15 @@ with open(filename) as fh:
     final_dict['descriptions'] = descriptions
     final_dict['summary'] = result_dict
 
-
+'''
 out_file_name = filename + '.json'
 out_file = open(out_file_name, "w")
-json.dump(final_dict, out_file, indent=4)
+#json.dump(final_dict, out_file, indent=4)
 out_file.close()
 
+html_name = filename + '.html'
+outf = open(html_name, "w")'''
+#outf.write(json2html.convert(json = final_dict))
+
+print(json2html.convert(json = final_dict))
+#outf.close()

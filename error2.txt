@@ -1,0 +1,765 @@
+JUnit version 4.13
+.E.E.E.E.E.E.E.E.E.game.VisualHL[frame1,0,23,260x240,invalid,hidden,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+ javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]
+  javax.swing.JPanel[null.glassPane,0,0,0x0,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+  javax.swing.JLayeredPane[null.layeredPane,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+   javax.swing.JPanel[null.contentPane,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+    javax.swing.JLabel[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=b.gif,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+    javax.swing.JButton[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@73700b80,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Higher,defaultCapable=true]
+    javax.swing.JButton[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@73700b80,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Lower,defaultCapable=true]
+    javax.swing.JTextField[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaTextFieldBorder@73e9cf30,flags=288,maximumSize=,minimumSize=,preferredSize=,caretColor=javax.swing.plaf.ColorUIResource[r=0,g=0,b=0],disabledTextColor=javax.swing.plaf.ColorUIResource[r=128,g=128,b=128],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=0,g=0,b=0],selectionColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=165,g=205,b=255],columns=20,columnWidth=0,command=,horizontalAlignment=LEADING]
+    javax.swing.JLabel[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=LEADING,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=Number Correct:,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+    javax.swing.JTextField[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaTextFieldBorder@73e9cf30,flags=288,maximumSize=,minimumSize=,preferredSize=,caretColor=javax.swing.plaf.ColorUIResource[r=0,g=0,b=0],disabledTextColor=javax.swing.plaf.ColorUIResource[r=128,g=128,b=128],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=0,g=0,b=0],selectionColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=165,g=205,b=255],columns=5,columnWidth=0,command=,horizontalAlignment=LEADING]
+    javax.swing.JButton[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@73700b80,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=New Game,defaultCapable=true]
+E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.game.VisualHL[frame15,0,23,260x240,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,22,260x218,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+ javax.swing.JRootPane[,0,22,260x218,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]
+  javax.swing.JPanel[null.glassPane,0,0,260x218,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+  javax.swing.JLayeredPane[null.layeredPane,0,0,260x218,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+   javax.swing.JPanel[null.contentPane,0,0,260x218,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+    javax.swing.JLabel[,44,20,-1x-1,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=b.gif,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+    javax.swing.JButton[,48,5,86x29,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@73700b80,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Higher,defaultCapable=true]
+    javax.swing.JButton[,139,5,81x29,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@73700b80,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Lower,defaultCapable=true]
+    javax.swing.JTextField[,5,39,250x26,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaTextFieldBorder@73e9cf30,flags=288,maximumSize=,minimumSize=,preferredSize=,caretColor=javax.swing.plaf.ColorUIResource[r=0,g=0,b=0],disabledTextColor=javax.swing.plaf.ColorUIResource[r=128,g=128,b=128],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=0,g=0,b=0],selectionColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=165,g=205,b=255],columns=20,columnWidth=12,command=,horizontalAlignment=LEADING]
+    javax.swing.JLabel[,40,75,104x16,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=LEADING,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=Number Correct:,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+    javax.swing.JTextField[,149,70,70x26,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaTextFieldBorder@73e9cf30,flags=288,maximumSize=,minimumSize=,preferredSize=,caretColor=javax.swing.plaf.ColorUIResource[r=0,g=0,b=0],disabledTextColor=javax.swing.plaf.ColorUIResource[r=128,g=128,b=128],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=0,g=0,b=0],selectionColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=165,g=205,b=255],columns=5,columnWidth=12,command=,horizontalAlignment=LEADING]
+    javax.swing.JButton[,75,101,110x29,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@73700b80,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=New Game,defaultCapable=true]
+E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.game.VisualHL[frame18,0,23,260x240,invalid,hidden,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+ javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]
+  javax.swing.JPanel[null.glassPane,0,0,0x0,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+  javax.swing.JLayeredPane[null.layeredPane,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+   javax.swing.JPanel[null.contentPane,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+    javax.swing.JLabel[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=b.gif,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+    javax.swing.JButton[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@73700b80,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Higher,defaultCapable=true]
+    javax.swing.JButton[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@73700b80,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Lower,defaultCapable=true]
+    javax.swing.JTextField[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaTextFieldBorder@73e9cf30,flags=288,maximumSize=,minimumSize=,preferredSize=,caretColor=javax.swing.plaf.ColorUIResource[r=0,g=0,b=0],disabledTextColor=javax.swing.plaf.ColorUIResource[r=128,g=128,b=128],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=0,g=0,b=0],selectionColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=165,g=205,b=255],columns=20,columnWidth=0,command=,horizontalAlignment=LEADING]
+    javax.swing.JLabel[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=LEADING,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=Number Correct:,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+    javax.swing.JTextField[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaTextFieldBorder@73e9cf30,flags=288,maximumSize=,minimumSize=,preferredSize=,caretColor=javax.swing.plaf.ColorUIResource[r=0,g=0,b=0],disabledTextColor=javax.swing.plaf.ColorUIResource[r=128,g=128,b=128],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=0,g=0,b=0],selectionColor=com.apple.laf.AquaImageFactory$SystemColorProxy[r=165,g=205,b=255],columns=5,columnWidth=0,command=,horizontalAlignment=LEADING]
+    javax.swing.JButton[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=com.apple.laf.AquaButtonBorder$Dynamic@73700b80,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=New Game,defaultCapable=true]
+E.E.E.E.E.E.E.E.E.E
+Time: 4.191
+There were 116 failures:
+1) test001(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 10 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at ErrorTest0.test001(ErrorTest0.java:16)
+2) test002(ErrorTest0)
+java.lang.IllegalArgumentException: type should not be null.
+	at java.desktop/java.awt.Window.setType(Window.java:2902)
+	at ErrorTest0.test002(ErrorTest0.java:26)
+3) test003(ErrorTest0)
+java.lang.IllegalArgumentException: type should not be null.
+	at java.desktop/java.awt.Window.setType(Window.java:2902)
+	at ErrorTest0.test003(ErrorTest0.java:38)
+4) test004(ErrorTest0)
+java.awt.IllegalComponentStateException: layeredPane cannot be set to null.
+	at java.desktop/javax.swing.JRootPane.setLayeredPane(JRootPane.java:625)
+	at java.desktop/javax.swing.JFrame.setLayeredPane(JFrame.java:706)
+	at ErrorTest0.test004(ErrorTest0.java:51)
+5) test005(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.remove(ArrayList.java:517)
+	at hand.Hand.removeCard(Hand.java:35)
+	at ErrorTest0.test005(ErrorTest0.java:60)
+6) test006(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at hand.PokerHand.dealerExchange(PokerHand.java:336)
+	at ErrorTest0.test006(ErrorTest0.java:73)
+7) test007(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at hand.PokerHand.dealerExchange(PokerHand.java:336)
+	at ErrorTest0.test007(ErrorTest0.java:85)
+8) test008(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JRootPane.addImpl(JRootPane.java:822)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at java.desktop/javax.swing.JRootPane.setGlassPane(JRootPane.java:680)
+	at java.desktop/javax.swing.JFrame.setGlassPane(JFrame.java:731)
+	at ErrorTest0.test008(ErrorTest0.java:106)
+9) test009(ErrorTest0)
+java.awt.IllegalComponentStateException: The frame is decorated
+	at java.desktop/java.awt.Frame.setShape(Frame.java:976)
+	at ErrorTest0.test009(ErrorTest0.java:129)
+10) test010(ErrorTest0)
+java.awt.IllegalComponentStateException: The frame is decorated
+	at java.desktop/java.awt.Frame.setOpacity(Frame.java:963)
+	at ErrorTest0.test010(ErrorTest0.java:145)
+11) test011(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:434)
+	at ErrorTest0.test011(ErrorTest0.java:166)
+12) test012(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.addImpl(Container.java:1109)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at ErrorTest0.test012(ErrorTest0.java:182)
+13) test013(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.addImpl(Container.java:1109)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at ErrorTest0.test013(ErrorTest0.java:226)
+14) test014(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JLayeredPane.addImpl(JLayeredPane.java:237)
+	at java.desktop/java.awt.Container.add(Container.java:995)
+	at java.desktop/javax.swing.JRootPane.setContentPane(JRootPane.java:603)
+	at java.desktop/javax.swing.JFrame.setContentPane(JFrame.java:679)
+	at ErrorTest0.test014(ErrorTest0.java:242)
+15) test015(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.checkAdding(Container.java:531)
+	at java.desktop/java.awt.Container.setComponentZOrder(Container.java:786)
+	at ErrorTest0.test015(ErrorTest0.java:262)
+16) test016(ErrorTest0)
+java.lang.IllegalArgumentException: illegal cursor type
+	at java.desktop/java.awt.Frame.setCursor(Frame.java:1104)
+	at ErrorTest0.test016(ErrorTest0.java:276)
+17) test017(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 7
+	at java.desktop/java.awt.Container.remove(Container.java:1225)
+	at ErrorTest0.test017(ErrorTest0.java:292)
+18) test018(ErrorTest0)
+java.lang.IllegalArgumentException: illegal cursor type
+	at java.desktop/java.awt.Frame.setCursor(Frame.java:1104)
+	at ErrorTest0.test018(ErrorTest0.java:312)
+19) test019(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.addImpl(Container.java:1109)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at ErrorTest0.test019(ErrorTest0.java:339)
+20) test020(ErrorTest0)
+java.util.MissingResourceException: Can't find bundle for base name game.VisualHL[frame5,0,23,260x240,invalid,hidden,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], locale ko_KR
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleFromModule(ResourceBundle.java:1609)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:963)
+	at java.desktop/java.awt.Window.applyResourceBundle(Window.java:2822)
+	at ErrorTest0.test020(ErrorTest0.java:364)
+21) test021(ErrorTest0)
+java.lang.IllegalArgumentException: The value of opacity should be in the range [0.0f .. 1.0f].
+	at java.desktop/java.awt.Window.setOpacity(Window.java:3648)
+	at java.desktop/java.awt.Frame.setOpacity(Frame.java:965)
+	at ErrorTest0.test021(ErrorTest0.java:379)
+22) test022(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JRootPane.addImpl(JRootPane.java:822)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at java.desktop/javax.swing.JRootPane.setGlassPane(JRootPane.java:680)
+	at java.desktop/javax.swing.JFrame.setGlassPane(JFrame.java:731)
+	at ErrorTest0.test022(ErrorTest0.java:401)
+23) test023(ErrorTest0)
+java.awt.IllegalComponentStateException: The frame is decorated
+	at java.desktop/java.awt.Frame.setShape(Frame.java:976)
+	at ErrorTest0.test023(ErrorTest0.java:427)
+24) test024(ErrorTest0)
+java.lang.IllegalArgumentException: illegal cursor type
+	at java.desktop/java.awt.Frame.setCursor(Frame.java:1104)
+	at ErrorTest0.test024(ErrorTest0.java:444)
+25) test025(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:995)
+	at ErrorTest0.test025(ErrorTest0.java:470)
+26) test026(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test026(ErrorTest0.java:484)
+27) test027(ErrorTest0)
+java.util.MissingResourceException: Can't find bundle for base name game.VisualHL[frame12,0,23,260x240,invalid,hidden,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], locale ko_KR
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleFromModule(ResourceBundle.java:1609)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:963)
+	at java.desktop/java.awt.Window.applyResourceBundle(Window.java:2822)
+	at ErrorTest0.test027(ErrorTest0.java:502)
+28) test028(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Container.setFocusTraversalKeys(Container.java:3142)
+	at java.desktop/javax.swing.JComponent.setFocusTraversalKeys(JComponent.java:4205)
+	at ErrorTest0.test028(ErrorTest0.java:518)
+29) test029(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test029(ErrorTest0.java:535)
+30) test030(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:995)
+	at ErrorTest0.test030(ErrorTest0.java:586)
+31) test031(ErrorTest0)
+java.lang.IllegalArgumentException: Number of buffers must be at least 1
+	at java.desktop/java.awt.Component.createBufferStrategy(Component.java:3881)
+	at java.desktop/java.awt.Window.createBufferStrategy(Window.java:3392)
+	at ErrorTest0.test031(ErrorTest0.java:601)
+32) test032(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: -1
+	at java.desktop/java.awt.Container.remove(Container.java:1225)
+	at ErrorTest0.test032(ErrorTest0.java:627)
+33) test033(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index -1 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at ErrorTest0.test033(ErrorTest0.java:640)
+34) test034(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at ErrorTest0.test034(ErrorTest0.java:673)
+35) test035(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JLayeredPane.addImpl(JLayeredPane.java:237)
+	at java.desktop/java.awt.Container.add(Container.java:995)
+	at java.desktop/javax.swing.JRootPane.setContentPane(JRootPane.java:603)
+	at java.desktop/javax.swing.JFrame.setContentPane(JFrame.java:679)
+	at ErrorTest0.test035(ErrorTest0.java:713)
+36) test036(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test036(ErrorTest0.java:784)
+37) test037(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:458)
+	at ErrorTest0.test037(ErrorTest0.java:826)
+38) test038(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test038(ErrorTest0.java:846)
+39) test039(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test039(ErrorTest0.java:862)
+40) test040(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.remove(ArrayList.java:517)
+	at hand.Hand.removeCard(Hand.java:35)
+	at ErrorTest0.test040(ErrorTest0.java:873)
+41) test041(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.addImpl(Container.java:1109)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at ErrorTest0.test041(ErrorTest0.java:904)
+42) test042(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:434)
+	at ErrorTest0.test042(ErrorTest0.java:925)
+43) test043(ErrorTest0)
+java.awt.IllegalComponentStateException: The frame is decorated
+	at java.desktop/java.awt.Frame.setShape(Frame.java:976)
+	at ErrorTest0.test043(ErrorTest0.java:959)
+44) test044(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.checkAdding(Container.java:531)
+	at java.desktop/java.awt.Container.setComponentZOrder(Container.java:786)
+	at ErrorTest0.test044(ErrorTest0.java:982)
+45) test045(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.addImpl(Container.java:1109)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at ErrorTest0.test045(ErrorTest0.java:1011)
+46) test046(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: -1
+	at java.desktop/java.awt.Container.remove(Container.java:1225)
+	at ErrorTest0.test046(ErrorTest0.java:1028)
+47) test047(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 64 out-of-bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at ErrorTest0.test047(ErrorTest0.java:1040)
+48) test048(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Container.setFocusTraversalKeys(Container.java:3142)
+	at ErrorTest0.test048(ErrorTest0.java:1072)
+49) test049(ErrorTest0)
+java.util.MissingResourceException: Can't find bundle for base name game.VisualHL[frame286,0,23,260x240,invalid,hidden,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], locale ko_KR
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleFromModule(ResourceBundle.java:1609)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:963)
+	at java.desktop/java.awt.Window.applyResourceBundle(Window.java:2822)
+	at ErrorTest0.test049(ErrorTest0.java:1087)
+50) test050(ErrorTest0)
+java.lang.IllegalArgumentException: No capabilities specified
+	at java.desktop/java.awt.Component.createBufferStrategy(Component.java:3885)
+	at java.desktop/java.awt.Window.createBufferStrategy(Window.java:3392)
+	at ErrorTest0.test050(ErrorTest0.java:1108)
+51) test051(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.checkAdding(Container.java:531)
+	at java.desktop/java.awt.Container.setComponentZOrder(Container.java:786)
+	at ErrorTest0.test051(ErrorTest0.java:1130)
+52) test052(ErrorTest0)
+java.awt.IllegalComponentStateException: component must be showing on the screen to determine its location
+	at java.desktop/java.awt.Component.getLocationOnScreen_NoTreeLock(Component.java:2059)
+	at java.desktop/java.awt.Component.getLocationOnScreen(Component.java:2033)
+	at ErrorTest0.test052(ErrorTest0.java:1146)
+53) test053(ErrorTest0)
+java.awt.IllegalComponentStateException: The window is displayable.
+	at java.desktop/java.awt.Window.setType(Window.java:2906)
+	at ErrorTest0.test053(ErrorTest0.java:1175)
+54) test054(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at hand.PokerHand.dealerExchange(PokerHand.java:336)
+	at ErrorTest0.test054(ErrorTest0.java:1189)
+55) test055(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at ErrorTest0.test055(ErrorTest0.java:1218)
+56) test056(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:995)
+	at ErrorTest0.test056(ErrorTest0.java:1264)
+57) test057(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at ErrorTest0.test057(ErrorTest0.java:1308)
+58) test058(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.checkAdding(Container.java:531)
+	at java.desktop/java.awt.Container.setComponentZOrder(Container.java:786)
+	at ErrorTest0.test058(ErrorTest0.java:1327)
+59) test059(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 128
+	at java.desktop/java.awt.Container.remove(Container.java:1225)
+	at ErrorTest0.test059(ErrorTest0.java:1348)
+60) test060(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: No such child: 7
+	at java.desktop/java.awt.Container.getComponent(Container.java:348)
+	at ErrorTest0.test060(ErrorTest0.java:1375)
+61) test061(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:458)
+	at ErrorTest0.test061(ErrorTest0.java:1394)
+62) test062(ErrorTest0)
+java.awt.IllegalComponentStateException: The frame is decorated
+	at java.desktop/java.awt.Frame.setShape(Frame.java:976)
+	at ErrorTest0.test062(ErrorTest0.java:1451)
+63) test063(ErrorTest0)
+java.lang.IllegalStateException: Component must have a valid peer
+	at java.desktop/java.awt.Component$FlipBufferStrategy.createBuffers(Component.java:4064)
+	at java.desktop/java.awt.Component$FlipBufferStrategy.<init>(Component.java:4038)
+	at java.desktop/java.awt.Component$FlipSubRegionBufferStrategy.<init>(Component.java:4566)
+	at java.desktop/java.awt.Component.createBufferStrategy(Component.java:3901)
+	at java.desktop/java.awt.Window.createBufferStrategy(Window.java:3392)
+	at java.desktop/java.awt.Component.createBufferStrategy(Component.java:3825)
+	at java.desktop/java.awt.Window.createBufferStrategy(Window.java:3367)
+	at ErrorTest0.test063(ErrorTest0.java:1463)
+64) test064(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JRootPane.addImpl(JRootPane.java:822)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at java.desktop/javax.swing.JRootPane.setGlassPane(JRootPane.java:680)
+	at java.desktop/javax.swing.JFrame.setGlassPane(JFrame.java:731)
+	at ErrorTest0.test064(ErrorTest0.java:1487)
+65) test065(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test065(ErrorTest0.java:1505)
+66) test066(ErrorTest0)
+java.lang.IllegalArgumentException: Width and height must be >= 0
+	at java.desktop/java.awt.Component.getBaseline(Component.java:2863)
+	at ErrorTest0.test066(ErrorTest0.java:1516)
+67) test067(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 260
+	at java.desktop/java.awt.Container.remove(Container.java:1225)
+	at ErrorTest0.test067(ErrorTest0.java:1530)
+68) test068(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: No such child: -1
+	at java.desktop/java.awt.Container.getComponent(Container.java:348)
+	at ErrorTest0.test068(ErrorTest0.java:1548)
+69) test069(ErrorTest0)
+java.awt.IllegalComponentStateException: The frame is decorated
+	at java.desktop/java.awt.Frame.setShape(Frame.java:976)
+	at ErrorTest0.test069(ErrorTest0.java:1602)
+70) test070(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: No such child: 16
+	at java.desktop/java.awt.Container.getComponent(Container.java:348)
+	at ErrorTest0.test070(ErrorTest0.java:1616)
+71) test071(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.addImpl(Container.java:1109)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at ErrorTest0.test071(ErrorTest0.java:1646)
+72) test072(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 16
+	at java.desktop/java.awt.Container.remove(Container.java:1225)
+	at ErrorTest0.test072(ErrorTest0.java:1672)
+73) test073(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 5
+	at java.desktop/java.awt.Container.remove(Container.java:1225)
+	at ErrorTest0.test073(ErrorTest0.java:1689)
+74) test074(ErrorTest0)
+java.awt.IllegalComponentStateException: component must be showing on the screen to determine its location
+	at java.desktop/java.awt.Component.getLocationOnScreen_NoTreeLock(Component.java:2059)
+	at java.desktop/java.awt.Component.getLocationOnScreen(Component.java:2033)
+	at ErrorTest0.test074(ErrorTest0.java:1705)
+75) test075(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.checkAdding(Container.java:531)
+	at java.desktop/java.awt.Container.setComponentZOrder(Container.java:786)
+	at ErrorTest0.test075(ErrorTest0.java:1718)
+76) test076(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at hand.PokerHand.dealerExchange(PokerHand.java:336)
+	at ErrorTest0.test076(ErrorTest0.java:1734)
+77) test077(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test077(ErrorTest0.java:1755)
+78) test078(ErrorTest0)
+java.lang.IllegalArgumentException: Width (-1) and height (2) cannot be <= 0
+	at java.desktop/sun.awt.image.SunVolatileImage.<init>(SunVolatileImage.java:75)
+	at java.desktop/sun.awt.image.SunVolatileImage.<init>(SunVolatileImage.java:103)
+	at java.desktop/sun.awt.image.SunVolatileImage.<init>(SunVolatileImage.java:114)
+	at java.desktop/sun.awt.image.SunVolatileImage.<init>(SunVolatileImage.java:108)
+	at java.desktop/sun.lwawt.LWComponentPeer.createVolatileImage(LWComponentPeer.java:998)
+	at java.desktop/java.awt.Component.createVolatileImage(Component.java:3648)
+	at ErrorTest0.test078(ErrorTest0.java:1773)
+79) test079(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.checkAdding(Container.java:531)
+	at java.desktop/java.awt.Container.setComponentZOrder(Container.java:786)
+	at ErrorTest0.test079(ErrorTest0.java:1808)
+80) test080(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test080(ErrorTest0.java:1849)
+81) test081(ErrorTest0)
+java.lang.IllegalArgumentException: The value of opacity should be in the range [0.0f .. 1.0f].
+	at java.desktop/java.awt.Window.setOpacity(Window.java:3648)
+	at java.desktop/java.awt.Frame.setOpacity(Frame.java:965)
+	at ErrorTest0.test081(ErrorTest0.java:1901)
+82) test082(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 10 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.remove(ArrayList.java:517)
+	at hand.Hand.removeCard(Hand.java:35)
+	at ErrorTest0.test082(ErrorTest0.java:1914)
+83) test083(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index -1 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.remove(ArrayList.java:517)
+	at hand.Hand.removeCard(Hand.java:35)
+	at ErrorTest0.test083(ErrorTest0.java:1923)
+84) test084(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:458)
+	at ErrorTest0.test084(ErrorTest0.java:1952)
+85) test085(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Container.setFocusTraversalKeys(Container.java:3142)
+	at ErrorTest0.test085(ErrorTest0.java:2008)
+86) test086(ErrorTest0)
+java.awt.IllegalComponentStateException: The frame is decorated
+	at java.desktop/java.awt.Frame.setOpacity(Frame.java:963)
+	at ErrorTest0.test086(ErrorTest0.java:2025)
+87) test087(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 35 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at ErrorTest0.test087(ErrorTest0.java:2040)
+88) test088(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:458)
+	at ErrorTest0.test088(ErrorTest0.java:2063)
+89) test089(ErrorTest0)
+java.awt.IllegalComponentStateException: The frame is decorated
+	at java.desktop/java.awt.Frame.setShape(Frame.java:976)
+	at ErrorTest0.test089(ErrorTest0.java:2098)
+90) test090(ErrorTest0)
+java.util.MissingResourceException: Can't find bundle for base name game.VisualHL[frame26,0,23,260x240,invalid,hidden,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], locale ko_KR
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleFromModule(ResourceBundle.java:1609)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:963)
+	at java.desktop/java.awt.Window.applyResourceBundle(Window.java:2822)
+	at ErrorTest0.test090(ErrorTest0.java:2130)
+91) test091(ErrorTest0)
+java.lang.IllegalArgumentException: No capabilities specified
+	at java.desktop/java.awt.Component.createBufferStrategy(Component.java:3885)
+	at java.desktop/java.awt.Window.createBufferStrategy(Window.java:3392)
+	at ErrorTest0.test091(ErrorTest0.java:2152)
+92) test092(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 10
+	at java.desktop/java.awt.Container.remove(Container.java:1225)
+	at ErrorTest0.test092(ErrorTest0.java:2164)
+93) test093(ErrorTest0)
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 10
+	at java.desktop/java.awt.Container.remove(Container.java:1225)
+	at ErrorTest0.test093(ErrorTest0.java:2178)
+94) test094(ErrorTest0)
+java.awt.IllegalComponentStateException: The frame is decorated
+	at java.desktop/java.awt.Frame.setShape(Frame.java:976)
+	at ErrorTest0.test094(ErrorTest0.java:2233)
+95) test095(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 99 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.remove(ArrayList.java:517)
+	at hand.Hand.removeCard(Hand.java:35)
+	at ErrorTest0.test095(ErrorTest0.java:2250)
+96) test096(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JRootPane.addImpl(JRootPane.java:822)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at java.desktop/javax.swing.JRootPane.setGlassPane(JRootPane.java:680)
+	at java.desktop/javax.swing.JFrame.setGlassPane(JFrame.java:731)
+	at ErrorTest0.test096(ErrorTest0.java:2337)
+97) test097(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JRootPane.addImpl(JRootPane.java:822)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at java.desktop/javax.swing.JRootPane.setGlassPane(JRootPane.java:680)
+	at java.desktop/javax.swing.JFrame.setGlassPane(JFrame.java:731)
+	at ErrorTest0.test097(ErrorTest0.java:2374)
+98) test098(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JLayeredPane.addImpl(JLayeredPane.java:237)
+	at java.desktop/java.awt.Container.add(Container.java:995)
+	at java.desktop/javax.swing.JRootPane.setContentPane(JRootPane.java:603)
+	at java.desktop/javax.swing.JFrame.setContentPane(JFrame.java:679)
+	at ErrorTest0.test098(ErrorTest0.java:2426)
+99) test099(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Container.setFocusTraversalKeys(Container.java:3142)
+	at ErrorTest0.test099(ErrorTest0.java:2464)
+100) test100(ErrorTest0)
+java.awt.IllegalComponentStateException: component must be showing on the screen to determine its location
+	at java.desktop/java.awt.Component.getLocationOnScreen_NoTreeLock(Component.java:2059)
+	at java.desktop/java.awt.Component.getLocationOnScreen(Component.java:2033)
+	at ErrorTest0.test100(ErrorTest0.java:2476)
+101) test101(ErrorTest0)
+java.lang.IllegalArgumentException: No capabilities specified
+	at java.desktop/java.awt.Component.createBufferStrategy(Component.java:3885)
+	at java.desktop/java.awt.Window.createBufferStrategy(Window.java:3392)
+	at ErrorTest0.test101(ErrorTest0.java:2498)
+102) test102(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JRootPane.addImpl(JRootPane.java:822)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at java.desktop/javax.swing.JRootPane.setGlassPane(JRootPane.java:680)
+	at java.desktop/javax.swing.JFrame.setGlassPane(JFrame.java:731)
+	at ErrorTest0.test102(ErrorTest0.java:2519)
+103) test103(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test103(ErrorTest0.java:2539)
+104) test104(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/javax.swing.JRootPane.addImpl(JRootPane.java:822)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at java.desktop/javax.swing.JRootPane.setGlassPane(JRootPane.java:680)
+	at java.desktop/javax.swing.JFrame.setGlassPane(JFrame.java:731)
+	at ErrorTest0.test104(ErrorTest0.java:2588)
+105) test105(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test105(ErrorTest0.java:2603)
+106) test106(ErrorTest0)
+java.lang.IllegalArgumentException: illegal component position
+	at java.desktop/java.awt.Container.checkAdding(Container.java:531)
+	at java.desktop/java.awt.Container.setComponentZOrder(Container.java:786)
+	at ErrorTest0.test106(ErrorTest0.java:2630)
+107) test107(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at ErrorTest0.test107(ErrorTest0.java:2651)
+108) test108(ErrorTest0)
+java.lang.IllegalArgumentException: illegal cursor type
+	at java.desktop/java.awt.Frame.setCursor(Frame.java:1104)
+	at ErrorTest0.test108(ErrorTest0.java:2662)
+109) test109(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.checkAdding(Container.java:540)
+	at java.desktop/java.awt.Container.setComponentZOrder(Container.java:786)
+	at ErrorTest0.test109(ErrorTest0.java:2698)
+110) test110(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at hand.PokerHand.dealerExchange(PokerHand.java:336)
+	at ErrorTest0.test110(ErrorTest0.java:2719)
+111) test111(ErrorTest0)
+java.lang.IllegalArgumentException: No capabilities specified
+	at java.desktop/java.awt.Component.createBufferStrategy(Component.java:3885)
+	at java.desktop/java.awt.Window.createBufferStrategy(Window.java:3392)
+	at ErrorTest0.test111(ErrorTest0.java:2737)
+112) test112(ErrorTest0)
+java.lang.IllegalArgumentException: invalid focus traversal key identifier
+	at java.desktop/java.awt.Window.getFocusTraversalKeys(Window.java:2439)
+	at ErrorTest0.test112(ErrorTest0.java:2759)
+113) test113(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:434)
+	at ErrorTest0.test113(ErrorTest0.java:2800)
+114) test114(ErrorTest0)
+java.lang.IllegalArgumentException: illegal cursor type
+	at java.desktop/java.awt.Frame.setCursor(Frame.java:1104)
+	at ErrorTest0.test114(ErrorTest0.java:2810)
+115) test115(ErrorTest0)
+java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at hand.Hand.getCard(Hand.java:50)
+	at hand.PokerHand.dealerExchange(PokerHand.java:336)
+	at ErrorTest0.test115(ErrorTest0.java:2830)
+116) test116(ErrorTest0)
+java.lang.IllegalArgumentException: adding a window to a container
+	at java.desktop/java.awt.Container.checkNotAWindow(Container.java:510)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1113)
+	at java.desktop/java.awt.Container.add(Container.java:1027)
+	at java.desktop/javax.swing.JFrame.addImpl(JFrame.java:553)
+	at java.desktop/java.awt.Container.add(Container.java:487)
+	at ErrorTest0.test116(ErrorTest0.java:2893)
+
+FAILURES!!!
+Tests run: 116,  Failures: 116
+
