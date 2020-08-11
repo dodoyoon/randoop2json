@@ -56,6 +56,7 @@ EOT
 cat <<EOT >> $1
 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 EOT
+python3 randoop2json.py "$4" >> $1
 cat <<EOT >> $1
 </div>
 EOT
