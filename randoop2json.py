@@ -1,58 +1,74 @@
 import json, copy, sys
 from json2html import *
+import io
 
-filename = sys.argv[1]
+file = sys.argv[1]
 
 final_dict = {}
+l_cnt = 0
+last_elem_cnt = 0
+descriptions=[]
+one_description={}
+result_dict={}
+loc_list=[]
 
-with open(filename) as fh:
-    l_cnt = 0
-    last_elem_cnt = 0
-    descriptions=[]
-    one_description={}
-    result_dict={}
-    loc_list=[]
-    for line in fh:
-        if line == '\n' :
-            continue
+is_exception = False
+exception_list = []
 
-        line = line.strip()
+for line in file.splitlines():
+    if line == '\n' or not line :
+        continue
 
-        if line[0].isdigit():
-            if loc_list:
-                one_description['location'] = loc_list
-                descriptions.append(copy.deepcopy(one_description))
-                loc_list.clear()
-                one_description.clear()
-                one_description['id'] = line
-            else:
-                one_description['id'] = line
+    line = line.strip()
 
-        # exception
-        elif line.split('.', 1)[0] == 'java':
-            one_description['exception'] = line
+    if line.split(' ', 1)[0] == 'at':
+        one_description['exception'] = copy.deepcopy(exception_list)
 
-        # location
-        elif line.split(' ', 1)[0] == 'at':
-            loc_list.append(copy.deepcopy(line))
+        is_exception = False
 
-        # results
-        elif line[0] == 'F':
-            result_dict['word'] = line
-            if last_elem_cnt == 0:
-                one_description['location'] = loc_list
 
-                descriptions.append(copy.deepcopy(one_description))
-                last_elem_cnt = last_elem_cnt + 1
-
-        elif line.split(' ', 1)[0] == 'Tests':
-             result_dict['result'] = line
-
+    if line[0].isdigit():
+        if loc_list:
+            one_description['location'] = loc_list
+            descriptions.append(copy.deepcopy(one_description))
+            loc_list.clear()
+            one_description.clear()
+            exception_list.clear()
+            one_description['id'] = line
         else:
-            continue
+            one_description['id'] = line
 
-    final_dict['descriptions'] = descriptions
-    final_dict['summary'] = result_dict
+        is_exception = True
+
+    # exception
+    # elif line.split('.', 1)[0] == 'java':
+    elif is_exception:
+        # one_description['exception'] = line
+        exception_list.append(copy.deepcopy(line))
+        # is_exception = False
+
+    # location
+    elif line.split(' ', 1)[0] == 'at':
+        loc_list.append(copy.deepcopy(line))
+
+    # results
+    elif line[0] == 'F':
+        result_dict['word'] = line
+        if last_elem_cnt == 0:
+            one_description['location'] = loc_list
+
+            descriptions.append(copy.deepcopy(one_description))
+            last_elem_cnt = last_elem_cnt + 1
+
+    elif line.split(' ', 1)[0] == 'Tests':
+         result_dict['result'] = line
+
+    else:
+        continue
+
+final_dict['descriptions'] = descriptions
+final_dict['summary'] = result_dict
+
 
 '''
 out_file_name = filename + '.json'

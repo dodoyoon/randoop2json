@@ -38,7 +38,7 @@ EOT
 cat <<EOT >> $1
 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 EOT
-python3 randoop2json.py error1.txt >> $1
+python3 randoop2json.py "$2" >> $1
 cat <<EOT >> $1
 </div>
 EOT
@@ -47,7 +47,7 @@ EOT
 cat <<EOT >> $1
 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 EOT
-python3 randoop2json.py error2.txt >> $1
+python3 randoop2json.py "$3" >> $1
 cat <<EOT >> $1
 </div>
 EOT
