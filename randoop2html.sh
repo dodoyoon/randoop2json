@@ -28,6 +28,9 @@ cat <<EOT > $1
            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">ver2 Error Test</a>
        </li>
        <li class="nav-item" role="presentation">
+           <a class="nav-link" id="new-tab" data-toggle="pill" href="#new" role="tab" aria-controls="new" aria-selected="false">Error Test</a>
+       </li>
+       <li class="nav-item" role="presentation">
            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Regression Test</a>
        </li>
    </ul>
@@ -38,7 +41,7 @@ EOT
 cat <<EOT >> $1
 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 EOT
-python3 randoop2json.py "$2" >> $1
+python3 randoop2json.py err1.txt >> $1
 cat <<EOT >> $1
 </div>
 EOT
@@ -47,16 +50,25 @@ EOT
 cat <<EOT >> $1
 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 EOT
-python3 randoop2json.py "$3" >> $1
+python3 randoop2json.py err2.txt >> $1
 cat <<EOT >> $1
 </div>
 EOT
 
 #third column
 cat <<EOT >> $1
+<div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+EOT
+python3 cmp.py err1.txt.json err2.txt.json>> $1
+cat <<EOT >> $1
+</div>
+EOT
+
+#fourth column
+cat <<EOT >> $1
 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 EOT
-python3 randoop2json.py "$4" >> $1
+python3 randoop2json.py reg_dif.txt >> $1
 cat <<EOT >> $1
 </div>
 EOT
