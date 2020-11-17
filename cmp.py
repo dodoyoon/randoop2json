@@ -7,126 +7,184 @@ with open(sys.argv[1]) as f:
 with open(sys.argv[2]) as f:
     data2 = json.load(f)
 
-# Step1 : remove the exactly same ones
-def check1(case):
+# Helping Methods
+def remove_line_info(locs):
+    if type(locs) == list:
+        for i in range(len(locs)):
+            loc = locs[i].rsplit(":", 1)[0] + ")"
+            locs[i] = loc
+    elif type(locs) == str:
+        locs = locs.rsplit(":", 1)[0] + ")"
+
+    return locs
+
+def remove_description(exception):
+    if exception.find(":"):
+        exception = exception.split(":", 1)
+        return exception[0]
+    else:
+        return exception
+
+# exception type(+description), full stack, + line number
+def method1(case):
     equal = False
     for i in data['descriptions']:
         if(i['exception']==case['exception']):
-            if len(i['location']) == len(case['location']):
-                location_equal = True
-                for j in range(len(i['location'])-1):
-                    if i['location'][j] != case['location'][j]:
-                        location_equal = False
-                        break
-                if location_equal:
-                    return True
-    return equal
-
-
-# extract exception part
-def extract_exception(input):
-    split_str = input.split(': ', 1)
-    return split_str[0]
-
-
-def check4(case):
-    found = False
-    for i in data['descriptions']:
-        exception1 = i['exception'][0]
-        exception2 = case['exception'][0]
-
-        direct_cause1 = i['location'][0]
-        direct_cause2 = case['location'][0]
-
-        if exception1 == exception2:
-            if direct_cause1 == direct_cause2:
-                found = True
-                return found
-
-    return found
-
-
-
-        # if(i['exception']==case['exception']):
-        #     if len(i['location']) == len(case['location']):
-        #         location_equal = True
-        #         for j in range(len(i['location'])-1):
-        #             if i['location'][j] != case['location'][j]:
-        #                 location_equal = False
-        #                 break
-        #         if location_equal:
-        #             return True
+            loc1 = i['location']
+            loc2 = case['location']
+            if loc1 == loc2:
+                equal = True
+            else:
+                break
 
     return equal
 
-
-# Step2 : check if the same methods are used between ver1 and ver2
-def check5(case):
-    found = False
-    for i in data['descriptions']:
-        exception1 = i['exception'][0]
-        exception2 = case['exception'][0]
-
-        direct_cause1 = i['location'][0]
-        direct_cause2 = case['location'][0]
-
-        if extract_exception(exception1) == extract_exception(exception2):
-            if direct_cause1 == direct_cause2:
-                found = True
-                return found
-
-    return found
-
-
-
-        # if(i['exception']==case['exception']):
-        #     if len(i['location']) == len(case['location']):
-        #         location_equal = True
-        #         for j in range(len(i['location'])-1):
-        #             if i['location'][j] != case['location'][j]:
-        #                 location_equal = False
-        #                 break
-        #         if location_equal:
-        #             return True
-
-    return equal
-
-def check7(case):
+# exception type(+description), full stack, - line number
+def method2(case):
     equal = False
     for i in data['descriptions']:
         if(i['exception']==case['exception']):
-            return True
+            loc1 = remove_line_info(i['location'])
+            loc2 = remove_line_info(case['location'])
+
+            if loc1 == loc2:
+                equal = True
+            else:
+                break
+
     return equal
 
-def check8(case):
+# exception type(-description), full stack, + line number
+def method3(case):
     equal = False
     for i in data['descriptions']:
-        exception1 = i['exception'][0]
-        exception2 = case['exception'][0]
-        if(extract_exception(exception1)==extract_exception(exception2)):
-            return True
+        exception1 = remove_description(i['exception'][0])
+        exception2 = remove_description(case['exception'][0])
+        if(exception1 == exception2):
+            loc1 = i['location']
+            loc2 = case['location']
+            if loc1 == loc2:
+                equal = True
+            else:
+                break
+
     return equal
 
+# exception type(-description), full stack, - line number
+
+def method4(case):
+    equal = False
+    for i in data['descriptions']:
+        exception1 = remove_description(i['exception'][0])
+        exception2 = remove_description(case['exception'][0])
+        if(exception1 == exception2):
+            loc1 = remove_line_info(i['location'])
+            loc2 = remove_line_info(case['location'])
+
+            if loc1 == loc2:
+                equal = True
+            else:
+                break
+
+    return equal
+
+
+# exception type(+description), top-most, + line number
+def method5(case):
+    equal = False
+    for i in data['descriptions']:
+        if(i['exception']==case['exception']):
+            loc1 = i['location'][0]
+            loc2 = case['location'][0]
+
+            if loc1 == loc2:
+                equal = True
+            else:
+                break
+
+    return equal
+
+# exception type(-description), top-most, + line number
+def method6(case):
+    equal = False
+    for i in data['descriptions']:
+        exception1 = remove_description(i['exception'][0])
+        exception2 = remove_description(case['exception'][0])
+        if(exception1 == exception2):
+            loc1 = i['location'][0]
+            loc2 = case['location'][0]
+
+            if loc1 == loc2:
+                equal = True
+            else:
+                break
+
+    return equal
+
+# exception type(+description), top-most, -line number
+def method7(case):
+    equal = False
+    for i in data['descriptions']:
+        if(i['exception']==case['exception']):
+            loc1 = remove_line_info(i['location'][0])
+            loc2 = remove_line_info(case['location'][0])
+
+            if loc1 == loc2:
+                equal = True
+            else:
+                break
+
+    return equal
+
+# exception type(-description), top-most, -line number
+def method8(case):
+    equal = False
+    for i in data['descriptions']:
+        exception1 = remove_description(i['exception'][0])
+        exception2 = remove_description(case['exception'][0])
+        if(exception1 == exception2):
+            loc1 = remove_line_info(i['location'][0])
+            loc2 = remove_line_info(case['location'][0])
+
+            if loc1 == loc2:
+                equal = True
+            else:
+                break
+
+    return equal
+
+# exception type(+description), no stack
+def method9(case):
+    equal = False
+    for i in data['descriptions']:
+        if(i['exception']==case['exception']):
+            equal = True
+
+    return equal
+
+# exception type(-description), no stack
+def method10(case):
+    equal = False
+    for i in data['descriptions']:
+        exception1 = remove_description(i['exception'][0])
+        exception2 = remove_description(case['exception'][0])
+        if(exception1 == exception2):
+            equal = True
+
+    return equal
+    
+# Save the result
+cnt = 0
 data3 = []
-# Step1
-cnt = 0
-'''
 for i in data2['descriptions']:
-    if not search(i):
-        cnt+=1
-        # print(i)
-        data3.append(copy.deepcopy(i))
-# print(cnt)
-'''
-
-# Step2
-cnt = 0
-for i in data2['descriptions']:
-    if not check8(i):
+    #print(i)
+    if not method10(i):
         cnt+=1
         data3.append(copy.deepcopy(i))
-        #print(i)
 
-html = json2html.convert(json = data3)
+    # 나중에 지우기!!! 테스트용!!!
+    #break
 print(cnt)
+html = json2html.convert(json = data3)
+# print(cnt)
 print(html)

@@ -23,15 +23,20 @@ for line in file:
         continue
 
     line = line.strip()
+    # print(line)
 
     if line.split(' ', 1)[0] == 'at':
+        #print("1")
+        # print(exception_list)
         one_description['exception'] = copy.deepcopy(exception_list)
 
         is_exception = False
 
 
-    if line[0].isdigit():
+    if line[0].isdigit() and 'test' in line:
+        #print("2")
         if loc_list:
+            #opprint("2-1")
             one_description['location'] = loc_list
             descriptions.append(copy.deepcopy(one_description))
             loc_list.clear()
@@ -39,6 +44,7 @@ for line in file:
             exception_list.clear()
             one_description['id'] = line
         else:
+            # print("2-2")
             one_description['id'] = line
 
         is_exception = True
@@ -46,27 +52,33 @@ for line in file:
     # exception
     # elif line.split('.', 1)[0] == 'java':
     elif is_exception:
+        # print("3")
         # one_description['exception'] = line
         exception_list.append(copy.deepcopy(line))
         # is_exception = False
 
     # location
     elif line.split(' ', 1)[0] == 'at':
+        # print("4")
         loc_list.append(copy.deepcopy(line))
 
     # results
     elif line[0] == 'F':
+        # print("5")
         result_dict['word'] = line
         if last_elem_cnt == 0:
+            # print("5-1")
             one_description['location'] = loc_list
 
             descriptions.append(copy.deepcopy(one_description))
             last_elem_cnt = last_elem_cnt + 1
 
     elif line.split(' ', 1)[0] == 'Tests':
-         result_dict['result'] = line
+        # print("6")
+        result_dict['result'] = line
 
     else:
+        # print("7")
         continue
 
 final_dict['descriptions'] = descriptions
